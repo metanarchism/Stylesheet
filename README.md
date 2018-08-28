@@ -5,13 +5,7 @@ The Reddit stylesheet for the /r/Anarchism subreddit.
 
 ## Installation
 
-You will need to install:
-
-- Gulp
-- Gulp Sass
-- Gulp Minify CSS
-
-You can install these using npm: 
+You can install dependencies using npm: 
 
 ```
 npm install --save-dev gulp
@@ -23,8 +17,8 @@ npm install --save-dev gulp-sass
 If you have never worked with Gulp before, feel free to do some research, maybe check-out this guide:
 https://travismaynard.com/writing/getting-started-with-gulp
 
-If this list is out of date, look at the beginning of the `gulpfile.js` and look through the `require` statements and see whether you are missing something from that list.
-You should especially do this if you have installed the above with npm, but you keep getting the `Error: Cannot find module` error when you try to use gulp.
+If this list of dependencies is out of date, look at the beginning of the `gulpfile.js` and look through the `require` statements and see whether you are missing something from that list.
+You should especially do this if you have installed the above with npm, but you keep getting the `Error: Cannot find module` error when you try to run a gulp job.
 
 ## Usage
 
