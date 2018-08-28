@@ -1,2 +1,3 @@
 # Stylesheet
-The Reddit Stylesheed for the /r/Anarchism subreddit.
+
+The Reddit stylesheet for the /r/Anarchism subreddit.
