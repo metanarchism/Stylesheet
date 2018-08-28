@@ -20,11 +20,9 @@ https://travismaynard.com/writing/getting-started-with-gulp
 If this list of dependencies is out of date, look at the beginning of the `gulpfile.js` and look through the `require` statements and see whether you are missing something from that list.
 You should especially do this if you have installed the above with npm, but you keep getting the `Error: Cannot find module` error when you try to run a gulp job.
 
-## Usage
+## Gulp Jobs
 
 There are various jobs setup in the `gulpfile.js`. A job does something for you relevant to the project.
-
-If you want to convert the Sass to CSS and then minify that CSS, you can run `gulp default`, which then runs `gulp sass` and `gulp minify-css`.
 
 Here are the gulp jobs and what they do:
 
@@ -32,8 +30,6 @@ Here are the gulp jobs and what they do:
 - `gulp sass` will convert the Sass files into CSS files, e.g. creating `build/stylesheets/main.css` from `source/stylesheets/main.scss`. 
 - `gulp minify-css` will [minify](https://en.wikipedia.org/wiki/Minification_(programming\)) that CSS for you (creating `build/minified/main.min.css`). 
 - `gulp watch` will watch for changes to the Sass files and run `gulp sass` and `gulp minify-css` whenever a change is detected. 
-
-
 
 
 ## Roadmap of the Directories
@@ -58,3 +54,11 @@ In a real website's project, those images would be referenced directly in the Sa
 `stylesheets` is where you will find the Sass files that make up the subreddit's styles. 
 There are directories for various components or modules of the Sass styles, and a `main.scss` which [imports](http://sass-lang.com/guide#topic-5) those other Sass files to build the CSS. 
 
+## How to Update the Subreddit's Styles
+
+0. Run `gulp default` or alternatively, run `gulp sass` and `gulp minify-css` from the terminal.
+0. Open up `build/minified/main.min.css` and copy the plaintext file into your clipboard (select all and copy)
+0. Go to https://www.reddit.com/r/Anarchism/about/stylesheet/
+0. Paste the minified CSS in your clipboard into the proper field (where the styles are). 
+0. Preview the changes and make sure you didn't break anything.
+0. Submit your changes.
