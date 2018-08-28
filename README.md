@@ -28,7 +28,7 @@ Here are the gulp jobs and what they do:
 
 - `gulp default` runs `gulp sass` and `gulp minify-css` sequentially.
 - `gulp sass` will convert the Sass files into CSS files, e.g. creating `build/stylesheets/main.css` from `source/stylesheets/main.scss`. 
-- `gulp minify-css` will [minify](https://en.wikipedia.org/wiki/Minification_(programming\)) that CSS for you (creating `build/minified/main.min.css`). 
+- `gulp minify-css` will [minify](https://en.wikipedia.org/wiki/Minification_(programming)) that CSS for you (creating `build/minified/main.min.css`). 
 - `gulp watch` will watch for changes to the Sass files and run `gulp sass` and `gulp minify-css` whenever a change is detected. 
 
 
